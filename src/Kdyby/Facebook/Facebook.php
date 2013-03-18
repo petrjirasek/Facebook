@@ -194,6 +194,16 @@ class Facebook extends Nette\Object
 
 
 	/**
+	 * @return FacebookControl
+	 */
+	public function createControl()
+	{
+		return new FacebookControl($this);
+	}
+
+
+
+	/**
 	 * @param string $name
 	 * @return Dialog
 	 * @throws InvalidArgumentException
